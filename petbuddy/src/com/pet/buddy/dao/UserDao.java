@@ -21,9 +21,9 @@ public class UserDao {
 
 
 	//email 중복 체크를 위한 메소드
-	public String emailCheck(String email) {
+	public String petemailCheck(String email) {
 		//데이터 1개를 받아오는 sql 실행
-		return sqlSession.selectOne("user.emailcheck",email);
+		return sqlSession.selectOne("user.petemailcheck",email);
 	}
 	
 	//회원 가입을 위한 메소드
